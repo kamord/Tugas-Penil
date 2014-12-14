@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.9.10)  14 DEC 2014 11:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.9.10)  14 DEC 2014 12:34
 entering extended mode
 **3D-BWP-Simulator.tex
 (C:\Users\Albert\Documents\GitHub\Tugas-Penil\3D-BWP-Simulator.tex
@@ -156,20 +156,23 @@ Bab 3.
 
 ] [7
 
-] (C:\Users\Albert\Documents\GitHub\Tugas-Penil\3D-BWP-Simulator.aux) ) 
+] (C:\Users\Albert\Documents\GitHub\Tugas-Penil\3D-BWP-Simulator.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1685 strings out of 493921
- 22432 string characters out of 3147279
+ 1686 strings out of 493921
+ 22434 string characters out of 3147279
  75438 words of memory out of 3000000
- 4985 multiletter control sequences out of 15000+200000
+ 4986 multiletter control sequences out of 15000+200000
  10062 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  27i,6n,19p,491b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmti10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 Output written on 3D-BWP-Simulator.pdf (9 pages, 93508 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
