@@ -10,7 +10,7 @@
 \chapterfont{\centering}
 
 \author{Albert Kamord (2011730077)}
-\title{3D Block-World-Problem-based Sudoku Games}
+\title{3D Block-World-Problem-based Sudoku Solver}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -53,21 +53,13 @@ Tujuan dari tulisan ini adalah : Menarik perhatian gamers dengan menggunakan sim
 \includegraphics{sudoku}\\ \vspace{1cm}
 \caption[Papan Permainan Sudoku]{Papan Permainan Sudoku} 
 \end{figure}
-Pada beberapa kotak tersebut, ada orang yang menempati atau menulis angka 1-9; tujuan dari pemain adalah untuk mengisi setiap kotak tersebut dengan catatan bahwa tiap baris, tiap kolom dan tiap blok 3 x 3 berisi hanya satu kali saja angka 1-9.
-Pertanyaan yang sering ditanyakan adalah berapa banyaknya kemungkinan grid Sudoku. Artinya, berapa banyak cara yang dapat kita lakukan untuk mengisi kotak-kotak tersebut sesuai peraturan.
 
-Dalam catatan ini, kami akan menjelaskan bagaimana kami pertama kali dihitung nomor ini. Ini adalah perhitungan pertama
-nomor ini; kita harus menunjukkan bahwa ia telah kemudian dikonfirmasi menggunakan lainnya (lebih cepat!) metode.
-Pertama, mari kita melihat bahwa grid Sudoku adalah kasus hanya khusus kotak Latin; ingat bahwa
-Persegi latin order n adalah n × n persegi yang berisi masing-masing angka 1, ..., n di setiap baris dan kolom.
-Perhitungan jumlah kotak Latin itu sendiri merupakan masalah yang sulit, dengan tidak ada rumus umum
-dikenal. Jumlah kotak Latin ukuran hingga 11 × 11 telah bekerja (lihat referensi [1], [2]
-dan [3] untuk 9 × 9, 10 × 10 dan 11 × 11 kotak), dan metode yang perhitungan kekuatan luas brute,
-mirip dengan pendekatan yang kita sketsa untuk grid Sudoku bawah. (Perhitungan brute force adalah mereka di mana bagian
-perhitungan melibatkan membangun semua kemungkinan jawaban, dan melihat mana yang benar-benar bekerja.) Hal ini
-diketahui bahwa jumlah 9 × 9 kotak Latin adalah 5524751496156892842531225600 ≈ 5,525 × 10 27. sejak
-jawaban ini sangat besar, kita akan harus pintar tentang bagaimana kita melakukan penghitungan kekerasan, di
-agar bisa mendapatkan jawaban dalam jumlah yang masuk akal waktu komputasi.
+\indent Pada beberapa kotak tersebut, ada orang yang menempati atau menulis angka 1-9; tujuan dari pemain adalah untuk mengisi setiap kotak tersebut dengan catatan bahwa tiap baris, tiap kolom dan tiap blok 3 x 3 berisi hanya satu kali saja angka 1-9.
+
+\indent Pertanyaan yang sering ditanyakan adalah berapa banyaknya kemungkinan grid Sudoku. Artinya, berapa banyak cara yang dapat kita lakukan untuk mengisi kotak-kotak tersebut sesuai peraturan.
+
+\indent Pada bab ini, akan dijelaskan bagaimana cara menyelesaikan suatu permainan sudoku. Pertama, lihat bahwa Sudoku adalah kasus yang dikhususkan untuk kotak Latin yang merupakan n x n kotak yang masing-masing berisi angka 1 sampai n di setiap baris dan kolom. Perhitungan jumlah kotak Latin juga merupakan suatu masalah, karena tidak ada rumus umum yang dikenal. Ukuran yang telah berhasil adalah 11 x 11 kotak(9 x 9, 10 x 10, 11 x 11), dan metode yang digunakan adalah metode brute force. Jumlah langkah yang ditempuh untuk kotak Latin dengan ukuran 9 x 9 yang menggunakan brute force adalah $5524751496156892842531225600 \approx 5,525$ x $10^{27}$. Jumlah ini sangat besar, oleh karena itu, harus digunakan sedikit trik untuk menghitung dengan cara brute force untuk menyelesaikan sudoku dengan penggunaan waktu paling sedikit.
+
 \section{BWP}
 Block World Problem
 
