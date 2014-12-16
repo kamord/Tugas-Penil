@@ -11,6 +11,7 @@
 
 \author{Albert Kamord (2011730077)}
 \title{3D Block-World-Problem-based Sudoku Solver Dengan Menggunakan Metode Brute Force}
+\date{17 Desember 2014}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -46,7 +47,6 @@ Tujuan dari tulisan ini adalah : Menarik perhatian gamers dengan menggunakan sim
 
 \chapter{Isi} %isi
 \section{Sudoku}
-\subsection{Definisi}
 \indent Sudoku mulai populer sejak tahun 2004 di Inggris. Sudoku, atau Su Doku, berasal dari bahasa Jepang yang berarti Tempat Angka. Ide dari sudoku sangat simpel; pemain memiliki grid 9 x 9, dibagi menjadi 9 blok 3 x 3 :
 \begin{figure}[h]
 \centering
@@ -58,9 +58,9 @@ Tujuan dari tulisan ini adalah : Menarik perhatian gamers dengan menggunakan sim
 
 \indent Pertanyaan yang sering ditanyakan adalah berapa banyaknya kemungkinan grid Sudoku. Artinya, berapa banyak cara yang dapat kita lakukan untuk mengisi kotak-kotak tersebut sesuai peraturan.
 
-\indent Pada bab ini, akan dijelaskan bagaimana cara menyelesaikan suatu permainan sudoku. Pertama, lihat bahwa Sudoku adalah kasus yang dikhususkan untuk kotak Latin yang merupakan n x n kotak yang masing-masing berisi angka 1 sampai n di setiap baris dan kolom. Perhitungan jumlah kotak Latin juga merupakan suatu masalah, karena tidak ada rumus umum yang dikenal. Ukuran yang telah berhasil adalah 11 x 11 kotak(9 x 9, 10 x 10, 11 x 11), dan metode yang digunakan adalah metode brute force. Jumlah langkah yang ditempuh untuk kotak Latin dengan ukuran 9 x 9 yang menggunakan brute force adalah $5524751496156892842531225600 \approx 5,525$ x $10^{27}$. Jumlah ini sangat besar, oleh karena itu, harus digunakan sedikit trik untuk menghitung dengan cara brute force untuk menyelesaikan sudoku dengan penggunaan waktu paling sedikit.
+\indent Sudoku adalah kasus yang dikhususkan untuk kotak Latin yang merupakan n x n kotak yang masing-masing berisi angka 1 sampai n di setiap baris dan kolom. Perhitungan jumlah kotak Latin juga merupakan suatu masalah, karena tidak ada rumus umum yang dikenal. Ukuran yang telah berhasil adalah 11 x 11 kotak(9 x 9, 10 x 10, 11 x 11), dan metode yang digunakan adalah metode brute force. Jumlah langkah yang ditempuh untuk kotak Latin dengan ukuran 9 x 9 yang menggunakan brute force adalah $5524751496156892842531225600 \approx 5,525$ x $10^{27}$. Jumlah ini sangat besar, oleh karena itu, harus digunakan sedikit trik untuk menghitung dengan cara brute force untuk menyelesaikan sudoku dengan penggunaan waktu paling sedikit.
 
-\section{Brute Force (Proof of Exhaustion}
+\section{Brute Force (Proof of Exhaustion)}
 Proof of Exhaustion atau biasa dikenal metode brute force, adalah metode pembuktian matematis di mana pernyataan yang harus dibuktikan dibagi ke dalam kasus dengan jumlah terbatas atau kumpulan kasus setara dan masing-masing jenis kasus diperiksa untuk melihat apakah proposisi tersebut terbukti. Metode ini adalah metode yang membuktikan secara langsung. Sebuah pembuktian oleh proof of exhaustion berisi dua tahap:
 
 \begin{enumerate}
@@ -69,14 +69,14 @@ Proof of Exhaustion atau biasa dikenal metode brute force, adalah metode pembukt
 \end{enumerate}
 
 \section{Block World Problem}
-Blok dunia adalah salah satu domain perencanaan yang paling terkenal dalam kecerdasan buatan. Bayangkan satu set kubus (blok) duduk di meja. Tujuannya adalah untuk membangun satu atau lebih tumpukan vertikal blok. Yang menangkap adalah bahwa hanya satu blok dapat dipindahkan pada suatu waktu: itu baik dapat diletakkan di atas meja atau ditempatkan di atas blok lain. Karena itu, setiap blok yang, pada waktu tertentu, di bawah blok lain tidak dapat dipindahkan.
+Block World adalah salah satu domain perencanaan yang paling terkenal dalam kecerdasan buatan(AI). Bayangkan satu set kubus (blok) diatas meja. Tujuannya adalah untuk membangun satu atau lebih tumpukan vertikal blok. Peraturannya adalah hanya satu blok dapat dipindahkan pada suatu waktu: baik dapat diletakkan di atas meja atau ditempatkan di atas blok lain. Karena itu, setiap blok pada waktu tertentu yang berada di bawah blok lain tidak dapat dipindahkan.
 
-Kesederhanaan dunia mainan ini cocok untuk mudah simbolik atau klasik AI pendekatan, di mana dunia dimodelkan sebagai satu set simbol abstrak yang dapat beralasan tentang.
+Kesederhanaan ini cocok untuk pendekatan AI, karena dunia dimodelkan sebagai satu set simbol abstrak yang dapat berhubungan satu sama lain.
 
-\section{3 Dimensi}
-Ruang tiga dimensi adalah model tiga parameter geometris alam semesta fisik (tanpa mempertimbangkan waktu) di mana semua materi yang dikenal ada. Ketiga dimensi dapat diberi label dengan kombinasi tiga dipilih dari panjang istilah, lebar, tinggi, kedalaman, dan keluasan. Setiap tiga arah dapat dipilih, asalkan mereka tidak semua terletak pada bidang yang sama.
+\section{Ruang 3 Dimensi}
+Ruang tiga dimensi adalah model tiga parameter geometris alam semesta fisika (tanpa mempertimbangkan waktu) dan semua materi yang dikenal ada. Ketiga dimensi dapat diberi label dengan tiga kombinasi dipilih dari panjang , lebar, tinggi, kedalaman, dan keluasan. Setiap tiga arah dapat dipilih, asalkan tidak semua terletak pada bidang yang sama.
 
-%Dalam fisika dan matematika, urutan angka n dapat dipahami sebagai lokasi dalam ruang n-dimensi. Ketika n = 3, himpunan semua lokasi tersebut disebut tiga dimensi ruang Euclidean. Hal ini umumnya diwakili oleh simbol \ scriptstyle {\ mathbb {R}} ^ 3. Ruang ini hanya salah satu contoh dari berbagai ruang dalam tiga dimensi yang disebut 3-manifold.
+Dalam fisika dan matematika, urutan angka n dapat dipahami sebagai lokasi dalam ruang n-dimensi. Ketika n = 3, himpunan semua lokasi tersebut disebut ruang tiga dimensi Euclidean. Hal ini umumnya diwakili oleh simbol $\Re^3$. Ruang ini hanya salah satu contoh dari berbagai ruang dalam tiga dimensi yang disebut 3-manifold.
 
 \chapter{Penutup} %Penutup
 \section{Kesimpulan}
@@ -87,7 +87,8 @@ Ruang tiga dimensi adalah model tiga parameter geometris alam semesta fisik (tan
 \indent Penyelesaian Sudoku cukup efektif, waktu yang digunakan juga relatif sedikit. Walapun waktu yang digunakan sedikit, jika ingin hasil \textit{instant} ketika dijalankan, masih memakan waktu cukup lama. Hardware yang digunakan juga harus memiliki spec yang tinggi. Hal ini disebabkan oleh pembuatan Sudoku berbasis 3D dan perhitungan yang cukup rumit.
 
 \section{Saran}
-Saran
+Sangat direkomendasikan kepada pembaca yang ingin mempelajari lebih lanjut mengenai cara menyelesaikan sudoku dan membuat simulasi dalam ruang 3Dimensi karena 3Dimensi di zaman sekarang sudah dipakai pada kebanyakan permainan. Cara penyelesaian sudoku juga sangat penting untuk mempelajari
+metode-metode yang bisa digunakan.
 
 \begin{thebibliography}{9}
 
