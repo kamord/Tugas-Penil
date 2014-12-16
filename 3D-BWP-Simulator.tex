@@ -10,7 +10,7 @@
 \chapterfont{\centering}
 
 \author{Albert Kamord (2011730077)}
-\title{3D Block-World-Problem-based Sudoku Solver}
+\title{3D Block-World-Problem-based Sudoku Solver Dengan Menggunakan Metode Brute Force}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -60,12 +60,32 @@ Tujuan dari tulisan ini adalah : Menarik perhatian gamers dengan menggunakan sim
 
 \indent Pada bab ini, akan dijelaskan bagaimana cara menyelesaikan suatu permainan sudoku. Pertama, lihat bahwa Sudoku adalah kasus yang dikhususkan untuk kotak Latin yang merupakan n x n kotak yang masing-masing berisi angka 1 sampai n di setiap baris dan kolom. Perhitungan jumlah kotak Latin juga merupakan suatu masalah, karena tidak ada rumus umum yang dikenal. Ukuran yang telah berhasil adalah 11 x 11 kotak(9 x 9, 10 x 10, 11 x 11), dan metode yang digunakan adalah metode brute force. Jumlah langkah yang ditempuh untuk kotak Latin dengan ukuran 9 x 9 yang menggunakan brute force adalah $5524751496156892842531225600 \approx 5,525$ x $10^{27}$. Jumlah ini sangat besar, oleh karena itu, harus digunakan sedikit trik untuk menghitung dengan cara brute force untuk menyelesaikan sudoku dengan penggunaan waktu paling sedikit.
 
-\section{BWP}
-Block World Problem
+\section{Brute Force (Proof of Exhaustion}
+Proof of Exhaustion atau biasa dikenal metode brute force, adalah metode pembuktian matematis di mana pernyataan yang harus dibuktikan dibagi ke dalam kasus dengan jumlah terbatas atau kumpulan kasus setara dan masing-masing jenis kasus diperiksa untuk melihat apakah proposisi tersebut terbukti. Metode ini adalah metode yang membuktikan secara langsung. Sebuah pembuktian oleh proof of exhaustion berisi dua tahap:
+
+\begin{enumerate}
+	\item Sebuah bukti bahwa kasus lengkap; yaitu, bahwa setiap contoh dari pernyataan harus dibuktikan sesuai dengan kondisi (setidaknya) salah satu kasus.
+	\item Sebuah bukti dari masing-masing kasus.
+\end{enumerate}
+
+\section{Block World Problem}
+Blok dunia adalah salah satu domain perencanaan yang paling terkenal dalam kecerdasan buatan. Bayangkan satu set kubus (blok) duduk di meja. Tujuannya adalah untuk membangun satu atau lebih tumpukan vertikal blok. Yang menangkap adalah bahwa hanya satu blok dapat dipindahkan pada suatu waktu: itu baik dapat diletakkan di atas meja atau ditempatkan di atas blok lain. Karena itu, setiap blok yang, pada waktu tertentu, di bawah blok lain tidak dapat dipindahkan.
+
+Kesederhanaan dunia mainan ini cocok untuk mudah simbolik atau klasik AI pendekatan, di mana dunia dimodelkan sebagai satu set simbol abstrak yang dapat beralasan tentang.
+
+\section{3 Dimensi}
+Ruang tiga dimensi adalah model tiga parameter geometris alam semesta fisik (tanpa mempertimbangkan waktu) di mana semua materi yang dikenal ada. Ketiga dimensi dapat diberi label dengan kombinasi tiga dipilih dari panjang istilah, lebar, tinggi, kedalaman, dan keluasan. Setiap tiga arah dapat dipilih, asalkan mereka tidak semua terletak pada bidang yang sama.
+
+%Dalam fisika dan matematika, urutan angka n dapat dipahami sebagai lokasi dalam ruang n-dimensi. Ketika n = 3, himpunan semua lokasi tersebut disebut tiga dimensi ruang Euclidean. Hal ini umumnya diwakili oleh simbol \ scriptstyle {\ mathbb {R}} ^ 3. Ruang ini hanya salah satu contoh dari berbagai ruang dalam tiga dimensi yang disebut 3-manifold.
 
 \chapter{Penutup} %Penutup
 \section{Kesimpulan}
-Kesimpulan
+\indent Banyak permainan tradisional yang telah dilupakan. Oleh karena itu, penulisan ilmiah ini dibuat. Permainan seperti Sudoku juga sudah berkurang peminatnya. Padahal, dulunya pernah populer di seluruh kalangan usia. Tulisan ini juga dibuat bertujuan untuk menarik perhatian pemain game zaman sekarang, mengingat semua game zaman sekarang dibuat dengan teknologi canggih.
+
+\indent Sudoku bisa diselesaikan dengan banyak cara, salah satunya menggunakan brute force. Kotak sudoku berukuran 11 x 11 telah berhasil diselesaikan, termasuk juga 9 x 9 dan 10 x 10. Penyelesaian Sudoku dengan cara brute force tentu saja memakan waktu. Tetapi brute force yang digunakan tidak langsung dari awal, ada penyaringan tertentu sehingga menghemat waktu.
+
+\indent Penyelesaian Sudoku cukup efektif, waktu yang digunakan juga relatif sedikit. Walapun waktu yang digunakan sedikit, jika ingin hasil \textit{instant} ketika dijalankan, masih memakan waktu cukup lama. Hardware yang digunakan juga harus memiliki spec yang tinggi. Hal ini disebabkan oleh pembuatan Sudoku berbasis 3D dan perhitungan yang cukup rumit.
+
 \section{Saran}
 Saran
 
@@ -97,10 +117,9 @@ Saran
   %organization={Citeseer}
 %}
 \bibitem{}
-	Felgenhauer, Bertram and Jarvis, Frazer.
-	\emph{Mathematics of sudoku I}.
-	[Oxford, Eng.] Oxford University Press,
-	2006.
+	Gupta, Naresh and Nau, Dana S and others.
+	\emph{Complexity Results for Blocks-World Planning}.
+	1991.
 
 %@article{chenowet1991np,
   %title={On the NP-hardness of blocks world},
@@ -108,10 +127,18 @@ Saran
   %year={1991}
 %}
 \bibitem{}
-	Felgenhauer, Bertram and Jarvis, Frazer.
-	\emph{Mathematics of sudoku I}.
-	[Oxford, Eng.] Oxford University Press,
-	2006.
+	Chenowet, Stephen V.
+	\emph{On the NP-hardness of blocks world}.
+	1991.
+	
+%Reid, D. A; Knipping, C (2010), Proof in Mathematics Education: Research, Learning, and Teaching, Sense Publishers, p. 133, ISBN 978-9460912443.
+
+\bibitem{}
+	Reid, D. A.
+	\emph{Proof in Mathematics Education: Research, Learning, and Teaching}.
+	Sense Publishers.
+	2010.
+
 \end{thebibliography}
 \end{document}
  

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.9.10)  15 DEC 2014 16:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.9.10)  16 DEC 2014 19:38
 entering extended mode
 **3D-BWP-Simulator.tex
 (C:\Users\Albert\Documents\GitHub\Tugas-Penil\3D-BWP-Simulator.tex
@@ -91,6 +91,9 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `' multiply defined.
 
+
+LaTeX Warning: Label `' multiply defined.
+
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
@@ -161,11 +164,11 @@ Package pdftex.def Info: sudoku.jpg used on input line 53.
 (pdftex.def)             Requested size: 159.59584pt x 159.59584pt.
  [5
 
- <C:/Users/Albert/Documents/GitHub/Tugas-Penil/sudoku.jpg>] [6]
+ <C:/Users/Albert/Documents/GitHub/Tugas-Penil/sudoku.jpg>] [6] [7]
 Bab 3.
-[7
+[8
 
-] [8
+] [9] [10
 
 ] (C:\Users\Albert\Documents\GitHub\Tugas-Penil\3D-BWP-Simulator.aux)
 
@@ -175,7 +178,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  1693 strings out of 493921
  22515 string characters out of 3147279
- 75503 words of memory out of 3000000
+ 76541 words of memory out of 3000000
  4990 multiletter control sequences out of 15000+200000
  10369 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -186,9 +189,9 @@ Here is how much of TeX's memory you used:
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmti10.pfb>
-Output written on 3D-BWP-Simulator.pdf (10 pages, 140343 bytes).
+Output written on 3D-BWP-Simulator.pdf (12 pages, 151528 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
